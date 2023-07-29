@@ -15,7 +15,7 @@ let currCity="Hyderabad";
 const searchForm = document.querySelector(".search");
 const searchInput = document.querySelector(".search-bar");
 
-const API_KEY = '6cc75012a81a0cce60612966604976e1'; // Replace with your OpenWeatherMap API key
+const API_KEY = '6cc75012a81a0cce60612966604976e1'; 
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ searchForm.addEventListener('submit', (e) => {
 });
 
 function convertTimeStamp(timestamp, timezone) {
-    const offsetInMinutes = timezone / 60; // Convert timezone offset from seconds to minutes
+    const offsetInMinutes = timezone / 60; 
     const offsetHours = Math.floor(offsetInMinutes / 60);
     const offsetMinutes = offsetInMinutes % 60;
 
